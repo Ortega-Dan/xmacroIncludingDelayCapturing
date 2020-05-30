@@ -1,0 +1,18 @@
+XMacro
+======
+Qball Cow <Qball@Sarine.nl>
+v0.4, 11 July 2007
+
+
+The XMacro package contains two simple, C programs (xmacrorec and xmacroplay) for recording and replaying keyboard and mouse events on an X server. This functionality is achieved through the XTest extension. (BTW it would be better to use the XTrap extension but it's not widespread in precompiled X servers...) The programs are heavily based on the xremote utility of Jan Ekholm (chakie at infa.abo.fi).
+
+The program is modified by mailto:qball@sarine.nl[Qball Cow <Qball@Sarine.nl>] for use in an automated regression test. So it has some specialised functionality f.e. the Screenshot command.
+
+include::Download.txt[tabsize=4]
+
+include::XMacroRec2.txt[tabsize=4]
+
+include::XMacroPlay.txt[tabsize=4]
+
+include::MacroDescription.txt[tabsize=4]
+

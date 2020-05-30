@@ -1,0 +1,4 @@
+XMacroRec2
+----------
+Records key and mouse events from a X session.
+

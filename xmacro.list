@@ -1,0 +1,16 @@
+%product Xmacro
+%copyright 2007 Qball Cow <Qball@Sarine.nl>
+%vendor Qball Cow
+%license COPYING
+%readme README
+%description X event recorder and replayer utilities
+%version 0.4
+
+# Executables
+%system all
+f 0555 root sys /usr/bin/xmacroplay xmacroplay
+f 0555 root sys /usr/bin/xmacrorec2 xmacrorec2
+
+
+# Documentation and example script
+f 0444 root sys /usr/doc/xmacro/README README

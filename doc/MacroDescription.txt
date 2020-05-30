@@ -1,0 +1,70 @@
+
+Commands
+--------
+The following commands are supported by xmacroplay.
+Commands with a * can be recorded from xmacrorec2.
+
+Delay [sec]  *
+~~~~~~~~~~~~~~
+Delays the program with [sec] miliseconds.
+
+ButtonPress [n] *
+~~~~~~~~~~~~~~~~~
+Sends a ButtonPress event with button [n], this emulates the pressing of the mouse button [n].
+
+ButtonRelease [n] *
+~~~~~~~~~~~~~~~~~~~
+sends a ButtonRelease event with button [n], this emulates the releaseing of the mouse button [n].
+
+MotionNotify [x] [y] *
+~~~~~~~~~~~~~~~~~~~~~~
+Sends a MotionNotify event, this emulates the movment of the mouse 
+
+KeyCodePress [kc] *
+~~~~~~~~~~~~~~~~~~~
+sends a KeyPress event with the keycode [kc] in this case you must know the keycodes of the remote server.
+
+KeyCodeRelease [kc] *	
+~~~~~~~~~~~~~~~~~~~~~
+sends a KeyRelease event with the keycode [kc] in this case you must know the keycodes of the remote server.
+
+KeySymPress [ks] *
+~~~~~~~~~~~~~~~~~~
+sends a KeyPress event with the keysym [ks] converted to the appropriate keycode on the remote server.
+
+KeySymRelease [ks] *
+~~~~~~~~~~~~~~~~~~~~
+sends a KeyRelease event with the keysym [ks] converted to the appropriate keycode on the remote server.
+
+KeySym [ks]
+~~~~~~~~~~~
+send both KeyPress and KeyRelease events with the keysym [ks] converted to the appropriate keycode on the remote server.
+
+KeyStrPress [ksname] *
+~~~~~~~~~~~~~~~~~~~~~~
+sends a KeyPress event with the keysym name [ksname] converted to the appropriate keycode on the remote server; standard KeySym names are obtained from [X11/keysymdef.h] by removing the XK_ prefix from each name.
+
+KeyStrRelease [ksname] *
+~~~~~~~~~~~~~~~~~~~~~~~~
+sends a KeyRelease event with the keysym name [ksname] converted to the appropriate keycode on the remote server; standard KeySym names are obtained from [X11/keysymdef.h] by removing the XK_ prefix from each name.
+
+KeyStr [ksname]
+~~~~~~~~~~~~~~
+sends both KeyPress and KeyRelease events with the keysym name [ksname] converted to the appropriate keycode on the remote server; standard KeySym names are obtained from [X11/keysymdef.h] by removing the XK_ prefix from each name.
+
+String [max. 1024 long string]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sends the string as single characters converted to KeyPress and KeyRelease events based on a character table in chartbl.h (currently only Latin1 is used.)
+
+Screenshot *
+~~~~~~~~~~~~
+Takes a screenshot. By default it uses imagemagick's import. This can be changed in the configuration file.
+Depending on configuration, taking a screenshot is blocking.
+
+ExecBlock [command]
+~~~~~~~~~~~~~~~~~~~
+Executes the [command], and wait until it finished.
+
+ExecNonBlock [command]
+~~~~~~~~~~~~~~~~~~~~~~
+Executes the [command], but continues withouth waiting until it finished.
