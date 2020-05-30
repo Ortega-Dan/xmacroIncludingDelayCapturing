@@ -22,7 +22,7 @@ make
 
 and then copy:\
 sudo cp xmacrorec2 /usr/local/bin/.\
-sudo cp xmacrorec2 /usr/local/bin/.
+sudo cp xmacroplay /usr/local/bin/.
 
 
 How to use it then:
