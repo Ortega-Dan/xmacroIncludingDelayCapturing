@@ -33,7 +33,7 @@ Essentially, xmacro records your pressed keys and saves them to a file. To run i
 
 xmacrorec2 > myrecording
 
-Once you call it, first you'll have to pick a quit-key (<Esc> is fine), then whatever you do will be recorded: moving your mouse, clicking, pressing any key, etc. Do some stuff, then press the quit-key, and you'll be able to replicate that behavior with the following command:
+Once you call it, first you'll have to pick a quit-key ([Esc] is fine), then whatever you do will be recorded: moving your mouse, clicking, pressing any key, etc. Do some stuff, then press the quit-key, and you'll be able to replicate that behavior with the following command:
 
 xmacroplay "$DISPLAY" < myrecording
 
