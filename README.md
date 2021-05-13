@@ -14,27 +14,31 @@ Requirments:
 * X11 record extention
 * X11 test extention
 
-You can install those dependencies on Debian based distributions with:\
+You can install those dependencies on Debian based distributions with:
+```
 sudo apt install gcc make libxtst-dev
+```
 
-Then just run:\
+Then, from the root directory of this downloaded project, just run:
+```
 make
+```
 
-and then copy:\
-sudo cp xmacrorec2 /usr/local/bin/.\
+and then copy:
+```
+sudo cp xmacrorec2 /usr/local/bin/.
 sudo cp xmacroplay /usr/local/bin/.
+```
 
 
 How to use it then:
 
 (The following correct and easy instructions were previously found at: https://sadasant.com/2014/04/05/xmacro-tasks-automation.html Seems like the site was changed ... anyway ...)
 
-Essentially, xmacro records your pressed keys and saves them to a file. To run it, see the line below:
-
-xmacrorec2 > myrecording
-
-Once you call it, first you'll have to pick a quit-key ([Esc] is fine), then whatever you do will be recorded: moving your mouse, clicking, pressing any key, etc. Do some stuff, then press the quit-key, and you'll be able to replicate that behavior with the following command:
-
-xmacroplay "$DISPLAY" < myrecording
-
-(end of quote)
+> Essentially, xmacro records your pressed keys and saves them to a file. To run it, see the line below:
+>
+> xmacrorec2 > myrecording
+>
+> Once you call it, first you'll have to pick a quit-key ([Esc] is fine), then whatever you do will be recorded: moving your mouse, clicking, pressing any key, etc. Do some stuff, then press the quit-key, and you'll be able to replicate that behavior with the following command:
+>
+> xmacroplay "$DISPLAY" < myrecording
