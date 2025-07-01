@@ -24,10 +24,10 @@ Then, from the root directory of this downloaded project, just run:
 make
 ```
 
-and then copy:
+and then install:
 ```
-sudo cp xmacrorec2 /usr/local/bin/.
-sudo cp xmacroplay /usr/local/bin/.
+sudo install xmacrorec2 /usr/local/bin/.
+sudo install xmacroplay /usr/local/bin/.
 ```
 
 
